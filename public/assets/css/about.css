@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Intro
+2. Testimonials
+3. CTA
+4. Team
+
+
+******************************/
+
+/*********************************
+2. Intro
+*********************************/
+
+.about_intro {
+    background: url("../images/introbg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 67px;
+    padding-bottom: 91px;
+    /* margin-top: 65px; */
+}
+.about_intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+.about_intro_content {
+    padding-top: 24px;
+}
+.about_intro_text {
+    margin-top: 33px;
+}
+.about_intro_text p {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    -ms-column-gap: 30px;
+    -o-column-gap: 30px;
+    column-gap: 30px;
+}
+.about_milestones {
+    margin-top: 56px;
+}
+.counter-stat {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0162ad;
+    line-height: 0.75;
+}
+.about_milestone_text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #404040;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/*********************************
+3. Testimonials
+*********************************/
+
+.testimonials {
+    padding-top: 102px;
+    padding-bottom: 80px;
+    background: #f9f6f1;
+}
+.testimonials_row {
+    margin-top: 34px;
+}
+.test_slider_container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.test_text p {
+    font-size: 16px;
+    line-height: 1.875;
+    color: #868686;
+}
+.test_info {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.test_info::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 50%;
+    background: #e8e3da;
+}
+.test_image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.test_image img {
+    max-width: 100%;
+}
+.test_text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #404040;
+}
+
+.test_slider .owl-item {
+    border: 1px solid #e8e3da;
+}
+.test_slider.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 44px;
+}
+.test_slider.owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+}
+
+/*********************************
+5. Team
+*********************************/
+
+.team {
+    background: #ffffff;
+    padding-top: 91px;
+    padding-bottom: 81px;
+}
+.team_row {
+    margin-top: 79px;
+}
+.team_item {
+    width: 100%;
+    height: 100%;
+}
+.team_image {
+    width: 100%;
+}
+.team_image img {
+    max-width: 100%;
+}
+.team_content {
+    padding-top: 37px;
+}
+.team_name a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #404040;
+}
+.team_title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0162ad;
+    margin-top: 3px;
+}
+.team_text {
+    margin-top: 22px;
+}

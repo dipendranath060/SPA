@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/************
+1. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	.cd-resize-img
+	{
+		right: 0px;
+	}
+}
+

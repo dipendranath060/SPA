@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Before and After
+
+
+******************************/
+
+
+/*********************************
+1. Before and After
+*********************************/
+
+.before_and_after
+{
+	padding-top: 88px;
+	padding-bottom: 90px;
+	background: #eaf2f5;
+}
+.before_and_after_row
+{
+	margin-top: 70px;
+}
+.cd-handle
+{
+	height: 60px !important;
+	width: 60px !important;
+	margin-left: -30px !important;
+	margin-top: -30px !important;
+	background: #0162AD url("../images/arrows.png") no-repeat center center;
+	box-shadow: none !important;
+}
+.cd-handle.draggable
+{
+	background-color: #E1B11E;
+}
+.cd-image-container
+{
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.cd-resize-img::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color: #eaf2f5;
+	content: '';
+}
+.ba_text
+{
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 44px;
+}

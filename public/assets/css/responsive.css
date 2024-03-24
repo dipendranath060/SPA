@@ -1,0 +1,271 @@
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1840px
+2. 1760px
+3. 1600px
+4. 1440px
+5. 1280px
+6. 1199px
+7. 991px
+8. 767px
+9. 575px
+
+******************************/
+
+/************
+1. 1840px
+************/
+
+@media only screen and (max-width: 1840px) {
+    .main_nav {
+        margin-left: 143px;
+    }
+}
+
+/************
+2. 1760px
+************/
+
+@media only screen and (max-width: 1760px) {
+    .work_hours {
+        display: none;
+    }
+}
+
+/************
+3. 1600px
+************/
+
+@media only screen and (max-width: 1600px) {
+    .main_nav {
+        margin-left: 18px;
+    }
+}
+
+/************
+4. 1440px
+************/
+
+@media only screen and (max-width: 1440px) {
+    .header_phone {
+        display: none;
+    }
+}
+
+/************
+5. 1280px
+************/
+
+@media only screen and (max-width: 1280px) {
+    .main_nav ul li:not(:last-child) {
+        margin-right: 14px;
+    }
+}
+
+/************
+6. 1199px
+************/
+
+@media only screen and (max-width: 1199px) {
+    .header_button {
+        display: none;
+    }
+    .header_content {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media (max-width: 1112px) and (min-width: 990px) {
+    .logo h2 {
+        font-size: 18px;
+    }
+    .logo span {
+        font-size: 13px;
+    }
+}
+
+/************
+7. 991px
+************/
+
+@media only screen and (max-width: 991px) {
+    .main_nav,
+    .header_social {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .cta_phone {
+        margin-top: 33px;
+    }
+    .service_img img {
+        height: 360px;
+    }
+    .footer_col:not(:last-child) {
+        margin-bottom: 80px;
+    }
+
+    .footer_location,
+    .footer_contact {
+        padding-top: 0;
+    }
+}
+
+/************
+8. 767px
+************/
+
+@media only screen and (max-width: 767px) {
+    .home_content {
+        max-width: 100%;
+    }
+
+    .home_title,
+    .home_maintitle {
+        font-size: 48px;
+    }
+    .home_container {
+        top: 200px;
+    }
+    .header_content {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    .service_img img {
+        height: 380px;
+    }
+
+    .footer_bar_content {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer_col:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .footer_nav {
+        margin-top: 15px;
+    }
+    .footer_col {
+        margin-bottom: 30px !important;
+    }
+    .opening_hours_list {
+        margin-top: 20px;
+    }
+    .footer_content {
+        padding: 40px 0;
+    }
+    .footer_nav ul {
+        padding: 0;
+    }
+}
+
+/************
+9. 575px
+************/
+
+@media only screen and (max-width: 575px) {
+    .menu {
+        width: 80%;
+        right: -80%;
+    }
+    .footer_col {
+        margin-bottom: 15px;
+    }
+    .service_detail_img {
+        height: 360px;
+    }
+    .service_img img {
+        height: 340px;
+    }
+    .footer_col:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+    .home {
+        height: 365px;
+    }
+    .home_container {
+        top: 180px;
+    }
+    .home_text {
+        font-size: 13px;
+    }
+    .service_col {
+        padding: 0 25px;
+    }
+
+    .header.scrolled .header_content,
+    .header_content {
+        height: 85px;
+    }
+
+    .logo img {
+        height: 64px;
+        width: 75px;
+    }
+    .header.scrolled .logo img {
+        height: 64px;
+        width: 75px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+    .logo span {
+        font-size: 11px;
+    }
+
+    .section_subtitle {
+        font-size: 16px;
+    }
+
+    .header_content {
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+    .button {
+        height: 40px;
+    }
+
+    .button a {
+        font-size: 12px;
+        line-height: 36px;
+        padding-left: 31px;
+        padding-right: 30px;
+    }
+    .home_title,
+    .home_maintitle {
+        font-size: 28px;
+    }
+    .opening_hours {
+        left: auto;
+        width: 100%;
+    }
+    .cta_title {
+        font-size: 28px;
+    }
+    .cta_phone {
+        font-size: 24px;
+    }
+    .opening_hours_list {
+        margin-top: 10px;
+    }
+    .footer_content {
+        padding: 20px 0;
+    }
+}

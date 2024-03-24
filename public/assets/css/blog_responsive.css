@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/************
+1. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	.cd-resize-img
+	{
+		right: 0px;
+	}
+}
+
+/************
+2. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	.blog_post_title a
+	{
+		font-size: 24px;
+	}
+	.blog_post_info
+	{
+		margin-top: 15px;
+	}
+	.blog_post_info ul li, .blog_post_info ul li a
+	{
+		font-size: 13px;
+	}
+	.blog_post_text
+	{
+		margin-top: 5px;
+	}
+}

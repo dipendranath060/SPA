@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/************
+1. 1199px
+************/
+
+@media only screen and (max-width: 1199px) {
+    .direct_line_num {
+        font-size: 15px;
+    }
+    .cd-resize-img {
+        right: 0px;
+    }
+}
+
+/************
+2. 991px
+************/
+
+@media only screen and (max-width: 991px) {
+    .contact_col {
+        margin-top: 70px;
+    }
+    .direct_line_num {
+        font-size: 20px;
+    }
+    .google_map {
+        height: 470px;
+    }
+}
+
+/************
+3. 575px
+************/
+
+@media only screen and (max-width: 575px) {
+    .direct_line_num {
+        font-size: 16px;
+    }
+    .google_map {
+        height: 370px;
+    }
+}

@@ -1,0 +1,871 @@
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+4. Menu
+5. Home
+5. Services
+6. CTA
+7. Footer
+
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.cdnfonts.com/css/trajan-pro");
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+body {
+    font-family: "Cormorant", serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #ffffff;
+    color: #838184;
+}
+div {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0px;
+}
+p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 500;
+    color: #838184;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+p a {
+    display: inline;
+    position: relative;
+    color: inherit;
+    border-bottom: solid 1px #ffa07f;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+p:last-of-type {
+    margin-bottom: 0;
+}
+a {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+p a:hover::after {
+    opacity: 0.2;
+}
+
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cormorant", serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.form-control {
+    color: #db5246;
+}
+section {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+.trans_200 {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.trans_300 {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.trans_400 {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.trans_500 {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.fill_height {
+    height: 100%;
+}
+.super_container {
+    width: 100%;
+    overflow: hidden;
+}
+.prlx_parent {
+    overflow: hidden;
+}
+.prlx {
+    height: 130% !important;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.parallax_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.background_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nopadding {
+    padding: 0px !important;
+}
+.button {
+    font-family: "Plus Jakarta sans", sans-serif;
+    height: 46px;
+    border-radius: 20px;
+}
+.button a {
+    display: block;
+    padding-left: 40px;
+    padding-right: 36px;
+    line-height: 42px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.button_1 {
+    background: #deaa20;
+    border: solid 2px transparent;
+}
+.button_1 a {
+    color: #ffffff;
+}
+.button_1:hover {
+    background: transparent;
+    border: solid 2px #deaa20;
+}
+.button_1:hover a {
+    color: #deaa20;
+}
+.button_2 {
+    background: transparent;
+    border: solid 2px #0162ad;
+}
+.button_2 a {
+    color: #0162ad;
+}
+.button_2:hover {
+    background: #0162ad;
+}
+.button_2:hover a {
+    color: #ffffff;
+}
+.section_subtitle {
+    font-family: "Alex Brush", cursive;
+    font-size: 32px;
+    font-weight: 500;
+    color: #deaa20;
+    line-height: 0.75;
+}
+.section_title {
+    text-transform: uppercase;
+    margin-top: 9px;
+}
+.intro_text {
+    margin-top: 32px;
+}
+.active_breadcrumb {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background: #ffffff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.header_content {
+    width: 100%;
+    height: 117px;
+    padding-left: 100px;
+    padding-right: 102px;
+}
+.header.scrolled .header_content {
+    height: 85px;
+    box-shadow: 0px 5px 15px rgba(87, 204, 195, 0.15);
+}
+.header.scrolled .logo img {
+    height: 70px;
+    width: 86px;
+}
+.logo img {
+    height: 80px;
+    width: 98px;
+    transition: all linear 400ms;
+}
+.logo h2 {
+    color: #0162ad;
+    font-family: "Trajan Pro", sans-serif;
+    font-size: 20px;
+}
+.logo span {
+    font-size: 13px;
+}
+.main_nav {
+    margin-left: 226px;
+}
+.main_nav ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #404040;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.main_nav ul li a:hover,
+.main_nav ul li.active a {
+    color: #0162ad;
+}
+.main_nav ul li:not(:last-child) {
+    margin-right: 25px;
+}
+.work_hours {
+    font-size: 15px;
+    font-weight: 600;
+    color: #404040;
+    margin-right: 26px;
+    white-space: nowrap;
+}
+.header_phone {
+    height: 46px;
+    border-radius: 20px;
+    background: #0162ad;
+    padding-left: 40px;
+    padding-right: 36px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 12px;
+}
+.header_phone::selection {
+    background: rgba(64, 64, 64, 0.75);
+}
+.header_button {
+    margin-right: 16px;
+}
+.social ul li {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #e6ebf1;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.social ul li:hover {
+    background: #0162ad;
+}
+.social ul li:hover a i {
+    color: #ffffff;
+}
+.social ul li:not(:last-of-type) {
+    margin-right: 15px;
+}
+.social ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 34px;
+    text-align: center;
+}
+.social ul li a i {
+    font-size: 16px;
+    color: #404040;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 300ms ease;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    border: solid 1px transparent;
+    border-radius: 7px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.hamburger:hover {
+    border: solid 1px rgba(0, 0, 0, 0.05);
+}
+.hamburger i {
+    font-size: 20px;
+    color: #404040;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/*********************************
+4. Menu
+*********************************/
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: #0162ad;
+    z-index: 102;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    font-family: "Plus Jakarta sans", sans-serif;
+    overflow: hidden;
+}
+.menu.active {
+    right: 0;
+}
+.menu_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: 101;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu_overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+.menu_close_container {
+    position: absolute;
+    top: 41px;
+    left: 28px;
+    width: 18px;
+    height: 18px;
+    transform-origin: center center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+    z-index: 1;
+}
+.menu_close {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3D;
+}
+.menu_close div {
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    top: 8px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.menu_close div:last-of-type {
+    -webkit-transform: rotate(90deg) translateX(-2px);
+    -moz-transform: rotate(90deg) translateX(-2px);
+    -ms-transform: rotate(90deg) translateX(-2px);
+    -o-transform: rotate(90deg) translateX(-2px);
+    transform: rotate(90deg) translateX(-2px);
+    transform-origin: center;
+}
+.menu_close:hover div {
+    background: #1befc5;
+}
+.menu_nav {
+    margin-top: 75px;
+}
+.menu_nav ul li:not(:last-child) {
+    margin-bottom: 1px;
+}
+.menu_nav ul li a {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+}
+.menu_nav ul li a:hover {
+    color: #1befc5;
+}
+.menu_social {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+.menu_social ul li:hover {
+    background: #404040;
+}
+.menu_social ul li:hover a i {
+    color: #ffffff;
+}
+.menu_extra {
+    margin-top: 50px;
+}
+.menu_extra > div:not(:last-child) {
+    margin-bottom: 5px;
+}
+.menu_link,
+.menu_link a {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+}
+.menu_link a:hover {
+    color: #ffffff;
+}
+.home_text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*********************************
+5. Home
+*********************************/
+
+.home {
+    width: 100%;
+    height: 400px;
+}
+.home_container {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.home_content {
+    max-width: 550px;
+}
+.home_title {
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+}
+.home_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 1px;
+}
+
+/*********************************
+6. Services
+*********************************/
+
+.services,
+.service_details {
+    background: #ffffff;
+    padding-top: 91px;
+    padding-bottom: 25px;
+}
+.service_details {
+    background: #f9f6f1 !important;
+}
+.services_row {
+    margin-top: 68px;
+}
+.service_col {
+    margin-bottom: 55px;
+}
+.service {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.service_body button {
+    position: relative;
+    z-index: 1;
+}
+.service_img {
+    overflow: hidden;
+    margin-bottom: 17px;
+}
+.service_img img {
+    height: 450px;
+    transition: all 400ms linear;
+}
+.service_img:hover img {
+    scale: 1.4;
+}
+.service_img::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    left: -100%;
+    top: 0;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    z-index: 1;
+    transform: skewX(-20deg);
+    transition: all 400ms linear;
+}
+.service_img:hover::after {
+    left: 120%;
+}
+.service_title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #404040;
+    line-height: 1.2;
+    text-transform: capitalize;
+    transition: all 200ms linear;
+}
+.service_title:hover {
+    color: #deaa20;
+}
+.service_text {
+    margin: 15px 0;
+}
+.service_bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.service_detail_img {
+    height: 500px;
+    & img {
+        height: 100%;
+    }
+}
+.service_time {
+    font-size: 20px;
+    color: #deaa20;
+}
+.service_price {
+    color: #0162ad;
+}
+.service_sidebar h4,
+.service_sidebar h6 {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: #deaa20;
+    font-size: 18px;
+    height: 90px;
+    width: 90px;
+    display: grid;
+    place-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 3;
+}
+.package_time {
+    font-size: 18px;
+    color: #0162ad;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*********************************
+7. CTA
+*********************************/
+
+.cta {
+    width: 100%;
+    background: url("../images/ctabg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-attachment: fixed;
+    position: relative;
+}
+.cta::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+.cta_title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+}
+.cta_phone {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    height: 59px;
+    padding-left: 24px;
+    padding-right: 25px;
+    line-height: 59px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    background: #deaa20;
+    border-radius: 19px;
+    white-space: nowrap;
+}
+
+/*********************************
+8. Footer
+*********************************/
+
+.footer {
+    display: block;
+    position: relative;
+    background: #292b2e;
+}
+
+.footer_logo img {
+    height: 80px;
+    width: 98px;
+    transition: all linear 400ms;
+}
+.footer_logo h2 {
+    color: #0162ad;
+    font-family: "Trajan Pro", sans-serif;
+    font-size: 22px;
+}
+.footer_logo span {
+    font-size: 15px;
+}
+.footer_content {
+    padding-top: 94px;
+    padding-bottom: 51px;
+}
+.footer_content ul {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.footer_about_text {
+    margin-top: 20px;
+}
+.footer_about_text p {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.footer_title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+}
+.footer_contact {
+    padding-top: 20px;
+}
+.contact_list {
+    margin-top: 20px;
+}
+.contact_list li {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+.contact_list li:not(:last-child) {
+    margin-bottom: 12px;
+}
+.footer_location {
+    padding-top: 20px;
+}
+.locations_list {
+    max-width: 180px;
+    margin-top: 20px;
+}
+.locations_list li {
+    line-height: 1.6;
+}
+.locations_list li:not(:last-child) {
+    margin-bottom: 19px;
+}
+.location_title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.location_text {
+    font-size: 12px;
+    color: white;
+    margin-top: 13px;
+}
+.opening_hours {
+    left: -32px;
+    width: calc(100% + 67px);
+    padding-left: 32px;
+    padding-right: 35px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border: solid 2px #deaa20;
+}
+.opening_hours_list {
+    margin-top: 44px;
+}
+.opening_hours_list li {
+    color: #fff;
+    white-space: nowrap;
+}
+.opening_hours_list li:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer_bar {
+    width: 100%;
+    background: #181a1d;
+}
+.footer_bar_content {
+    height: 49px;
+}
+.copyright {
+    font-size: 12px;
+    font-weight: 500;
+    color: #646464;
+}
+.footer_nav ul li:not(:last-child) {
+    margin-right: 29px;
+}
+.footer_nav ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #818181;
+}
+.footer_nav ul li a:hover {
+    color: #0162ad;
+}
+.footer_bar {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
